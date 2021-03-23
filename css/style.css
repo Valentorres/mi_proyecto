@@ -1,0 +1,288 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.art1 {
+  height: 70vh;
+  margin: 7rem;
+  margin-top: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.art2 {
+  height: 70vh;
+  margin: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.videoPrincipal {
+  width: 100%;
+  height: 50%;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.imgMacaron {
+  width: 105vh;
+  height: 70vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.imgMacaron:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.imgGlaseado {
+  width: 105vh;
+  height: 70vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.imgGlaseado:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.center {
+  margin-top: 1rem;
+}
+
+.txt_center {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+body header {
+  width: 100%;
+  height: 30vh;
+  border-bottom: 1px white solid;
+}
+
+body nav {
+  /* no hace falta especifiarle un width en este caso porque queremos que ocupe el 100 por cien del contenedor*/
+  height: 15vh;
+  margin: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+body nav ul li {
+  color: black;
+  padding: 5px;
+  background: none;
+  margin-top: 2rem;
+}
+
+body nav ul li a:hover {
+  background-color: black;
+  padding: 20px;
+}
+
+body nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+body .menu__ul {
+  position: relative;
+  width: 60%;
+}
+
+body .menu__logo {
+  width: 8%;
+  height: 15vh;
+}
+
+body .icon.open {
+  display: none;
+}
+
+body .close {
+  font-size: 2rem;
+  display: none;
+}
+
+body .div_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div {
+  text-align: center;
+  margin: auto;
+}
+
+body hr {
+  width: 100%;
+}
+
+body .hero {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 45vh;
+  background-color: beige;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+}
+
+footer .contenedor {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  /* Evito dar los márgenes de cada uno de los elementos html */
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* Lo divido en tres columnas del mismo tamaño */
+  /* grid-template-columns: repeat(3, 1fr); Otra forma de escribir lo de arriba */
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  /*Dónde quiero que comience y que termine*/
+}
+
+footer .footer__box {
+  width: 65%;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 2rem;
+  margin-top: 3rem;
+  background-color: beige;
+  color: black;
+}
+
+footer .box1 {
+  width: 85%;
+}
+
+footer .icon {
+  margin: 10px 0px 0px 0px;
+  color: black;
+}
+
+footer .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer .txt {
+  font-size: 1rem;
+}
+
+footer .LogoFooter img {
+  width: 100px;
+  height: 100px;
+  display: Flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .izq {
+  text-align: left;
+}
+
+footer .m-top {
+  margin-top: 1rem;
+}
+
+footer label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+footer label input {
+  margin-top: .1rem;
+}
+/*# sourceMappingURL=style.css.map */

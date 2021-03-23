@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--Comentario-->
+
+<html lang="es">
+<!--Puedo cambiar el lenguaje-->
+
+
+<!--la siguiente parte es una comunicación internra con el navegador: pasa info al navegador-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--me da la característica de la estructura del lenguaje, x ej permite los tildes-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Responsive: esta etiqueta me permite adaptar al dispositivo del usuario, es decir adapta el ancho y alto en cada dispositivo-->
+
+    <title>Carmen Patisserie</title>
+    <!--escribe un titulo a la pestaña del buscador-->
+
+     <!-- css only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <!-- boots icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+    <!--el body presenta el cuerpo de la info-->
+
+    <header>
+
+        <div class="div_menu">
+
+            <a href="#menu" id="tog" onclick="" class="icon open">
+                <span class="iconify" data-icon="dashicons:menu-alt3" data-inline="false"></span>
+            </a>
+            <div class="div_logo">
+                <img class="menu__logo" src="http://placehold.it/100x100" alt="logo">
+            </div>
+        </div>
+
+        <nav id="menu">
+
+            <a href="#" class="icon close">
+                <span class="iconify" data-icon="ion:close-circle" data-inline="false"></span>
+            </a>
+
+            <ul class="menu__ul">
+                <li class="list_item"><a href="index.html">HOME</a></li>
+                <li class="list_item"><a href="../paginas/panaderia.html">PANADERÍA</a></li>
+                <li class="list_item"><a href="../paginas/pasteleria.html">PASTELERÍA</a></li>
+                <li class="list_item"><a href="../paginas/galeria.html">GALERIA</a></li>
+                <li class="list_item"><a href="../paginas/nosotros.html">NOSOTROS</a></li>
+                <li class="list_item"><a href="../paginas/contacto.html">CONTACTO</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero__Text">
+                <h1>Bienvenidos a <span>Carmen Patisserie</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate minima expedita voluptatibus dicta? </p>
+            </div>
+       </section>
+
+        <video class="videoPrincipal hidden" src="multimedia/VIDEO1.mp4" controls>
+            <!--"controls" me permite que haya controles de pausa, play etc en el video-->
+            <p>Tu navegador no soporta HTML5 video. Aquí está el <a href="no se que va">enlace del video</a>.</p>
+            <!--esto de arriba es porque algunos navegadores viejos no soportaban los archivos-->
+
+        </video>
+
+        <section class="hidden">
+            <div class="art1">
+                <img class="imgMacaron" src="multimedia/FOTO1.jpg" alt="Macarons">
+                <div class="txt_center">
+                    <h2>Macarons</h2>
+                    <p class="center"> Déjate llevar por nuestras cajas de macarrones "Colección Invierno 2021", donde
+                        sabores
+                        emblemáticos y efímeros se funden sin distinción.</p>
+                </div>
+            </div>
+
+            <div class="art2">
+                <img class="imgGlaseado" src="multimedia/FOTO2.jpg" alt="Glaseado espejado">
+                <div class="txt_center">
+                    <h2>Glaseado espejado</h2>
+                    <p class="center">El glaseado de espejo es una cobertura que aporta un acabado estupendo y perfecto,
+                        que
+                        además hará que el postre posea un sabor a chocolate dulce e intenso.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+    </main>
+
+    <footer class="footer hidden contenedor">
+
+        <div class="footer__box box1">
+            <h3 class="title izq">Suscribite a nuestro Newsletter</h3>
+            <form>
+                <label for="email"></label>
+                <input type="email" style="width: 95%; padding: 1px 2px" placeholder="Ingresa tu email" value=""
+                    id="subscribe-field">
+            </form>
+        </div>
+
+        <div class="footer__box">
+            <div>
+                <h3 class="title izq">Contacto</h3>
+                <p class="numero izq">4268-2629</p>
+                <p class="txt izq">mail@gmail.com</p>
+            </div>
+            <div class="m-top">
+                <h3 class="title izq">Dirección</h3>
+                <p class="txt izq">Avenida Libertador 123, Buenos Aires</p>
+            </div>
+
+        </div>
+
+        <div class="footer__box">
+            <h3 class="title izq">Encontranos en</h3>
+            <div class="izq">
+                <a class="icon izq" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="icon izq" href="#"><i class="bi bi-instagram"></i></i></a>
+                <a class="icon izq" href="#"><i class="bi bi-whatsapp"></i></i></a>
+            </div>
+        </div>
+
+        <div class="LogoFooter footer__box">
+            <img class="logo izq" src="http://placehold.it/100x100" alt="logo">
+        </div>
+
+    </footer>
+
+
+
+    
+</body>
+
+
+</html>
